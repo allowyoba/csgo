@@ -22,7 +22,7 @@ RUN set -x \
 			echo 'quit'; \
 		} > ${STEAMAPPDIR}/csgo_update.txt \
 	&& wget -qO- https://raw.githubusercontent.com/CM2Walki/CSGO/master/etc/cfg.tar.gz | tar xvzf - \
-	&& sed -i -E "s/hostname\s+\".+\"/hostname \"| SEKA-GAMING |\"/" server.cfg \
+	&& sed -i -E "s/hostname\s+\".+\"/hostname \"| SEKA-GAMING |\"/" cfg/server.cfg \
 	&& wget -qO- https://mms.alliedmods.net/mmsdrop/1.10/mmsource-1.10.7-git971-linux.tar.gz | tar xvzf - \
 	&& wget -qO- https://sm.alliedmods.net/smdrop/1.10/sourcemod-1.10.0-git6454-linux.tar.gz | tar xvzf - \
 	&& wget -qO tmp.zip https://github.com/splewis/csgo-practice-mode/releases/download/1.3.3/practicemode_1.3.3.zip | unzip tmp.zip \
